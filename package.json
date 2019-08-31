@@ -1,0 +1,16 @@
+{
+  "name": "SamodzielneTesty",
+  "version": "1.0.0",
+  "description": "",
+  "main": "calculateDistancePoints.js",
+  "scripts": {
+    "test": "mocha index.test.js",
+    "test:watch": "mocha *.test.js -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^6.2.0"
+  }
+}
