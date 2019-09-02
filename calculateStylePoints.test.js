@@ -4,43 +4,43 @@ const calculateStylePoints = require('./calculateStylePoints');
 describe('calculateStylePoints', () => {
     describe('Notes for jump: ', () => {
         it('Same integer numbers: ', () => {
-            const actual = calculateStylePoints([20, 20, 20, 20, 20]);
+            const actualStylePoints = calculateStylePoints([20, 20, 20, 20, 20]);
 
-            const expected = 60;
+            const expectedStylePoints = 60;
 
-            assert.equal(actual, expected);
+            assert.equal(actualStylePoints, expectedStylePoints);
         });
 
         it('Different integer numbers: ', () => {
-            const actual = calculateStylePoints([12, 18, 14, 16, 19]);
+            const actualStylePoints = calculateStylePoints([12, 18, 14, 16, 19]);
 
-            const expected = 48;
+            const expectedStylePoints = 48;
 
-            assert.equal(actual, expected);
+            assert.equal(actualStylePoints, expectedStylePoints);
         });
 
         it('Same non-integer numbers: ', () => {
-            const actual = calculateStylePoints([17.5, 17.5, 17.5, 17.5, 17.5]);
+            const actualStylePoints = calculateStylePoints([17.5, 17.5, 17.5, 17.5, 17.5]);
 
-            const expected = 52.5;
+            const expectedStylePoints = 52.5;
 
-            assert.equal(actual, expected);
+            assert.equal(actualStylePoints, expectedStylePoints);
         });
         
         it('Non-integer numbers: ', () => {
-            const actual = calculateStylePoints([19.5, 17.5, 19.5, 15.5, 16.5]);
+            const actualStylePoints = calculateStylePoints([19.5, 17.5, 19.5, 15.5, 16.5]);
 
-            const expected = 53.5;
+            const expectedStylePoints = 53.5;
 
-            assert.equal(actual, expected);
+            assert.equal(actualStylePoints, expectedStylePoints);
         });
 
         it('Mixed numbers: ', () => {
-            const actual = calculateStylePoints([19.5, 20, 19.5, 20, 18]);
+            const actualStylePoints = calculateStylePoints([19.5, 20, 19.5, 20, 18]);
 
-            const expected = 59;
+            const expectedStylePoints = 59;
 
-            assert.equal(actual, expected);
+            assert.equal(actualStylePoints, expectedStylePoints);
         });
     });
 });
